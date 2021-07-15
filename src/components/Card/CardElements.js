@@ -4,16 +4,15 @@ import styled from 'styled-components';
 
 export const CardContainer=styled.div`
     overflow: hidden;
-    box-shadow: 0 2px 12px ;
-    border-radius: 0.5rem;
-    border: solid 1px ${(props) => props.theme.palette.text.third};
+    box-shadow: 0 2px 9px ;
+    border-radius: 0.5rem;s
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: ${props => props.theme.palette.background.paper};
     transition: transform 200ms ease-in;
-    margin-top:6rem;
+    margin:3rem 0;
     :hover {
         transform: scale(1.02);
       }
@@ -24,7 +23,7 @@ export const CardBody=styled.div`
 
 export const CardImg=styled.div`
     background-repeat: no-repeat;
-    height: 20rem;
+    height: 18rem;
     width: 100%;
 `;
 
@@ -40,19 +39,3 @@ export const CardContent=styled.p`
     color: ${(props) => props.theme.palette.text.third};
 `;
 
-export const CardButton=styled.button`
-    padding: 1rem;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 1rem;
-    border: 2px solid cornflowerblue;
-    background: transparent;
-    color: cornflowerblue;
-    border-radius: 0.2rem;
-    transition: background 200ms ease-in, color 200ms ease-in;
-    :hover {
-    background: cornflowerblue;
-    color: var(--black);
-  }
-`;
